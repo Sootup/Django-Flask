@@ -54,3 +54,75 @@ for i, n in enumerate(m):
         m[i] = max
 print(m)
 """
+
+# from random  import randint
+# n = 15
+# ar = list()
+# for i in range(n):
+#     r = randint(1,10)
+#     ar.append(r)
+#     res = 0
+#     if i > ar:
+#         print(res)
+
+
+# print(ar)
+# print(res)
+# num = [1,2,3,4,5]
+# def fact2(n):
+#     res = 1
+#     for i in 
+#         res *= i
+#     print(res)
+    
+            
+
+
+# slova = "bob boba tool"
+# def pal(slova):
+#     res = []
+#     slova = slova.split(" ")
+#     # res = "".join(reversed(slova))
+#     for i in reversed(slova):
+#         res.append(i)
+#     return res
+# print(pal(slova))
+
+
+# slova = "bob boba tool"
+
+# def pal(slova):
+#     res = []
+#     slova = slova.split(" ")
+#     for i in range(len(slova)-1,-1,-1):
+#         res.append(slova[i])
+#     print(res)
+        
+
+        
+#     return slova
+
+
+    
+  
+
+# print(pal(slova))
+
+# n = int(input("1:"))
+# m = int(input("2:"))
+# p = range(n,m)
+# print(p)
+# res = []
+# for i in p:
+#     for g in range(2, i-1):
+#         if i % g == 0:
+#             res.append(g)
+# print(res)
+import datetime
+          
+num = [{'num':101, 'start':'minsk', 'stop':'brest', 'time_start':datetime.datetime.strptime("02:25","%H:%M"), 'time_end':datetime.datetime.strptime("04:15","%H:%M")},{'num':102, 'start':'gomel', 'stop':'vitebs', 'time_start':datetime.datetime.strptime("01:15","%H:%M"), 'time_end':datetime.datetime.strptime("15:15","%H:%M")}]
+for i in num:
+    res = i['time_end'] - i["time_start"] 
+    if res > datetime.timedelta(hours=7,minutes=20):
+        print(i)
+

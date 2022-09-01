@@ -38,3 +38,7 @@ for i in range(0,13):
     f1,f2 = f2,f1 + f2
     print("",f2,end=" ")
 """
+from random import randint
+n = 5
+matrix = [[randint(1, 9) for j in range(n)] for i in range(n)]
+print(matrix)
