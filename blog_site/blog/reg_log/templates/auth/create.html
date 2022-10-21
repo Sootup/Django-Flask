@@ -1,0 +1,59 @@
+{% extends 'auth/base.html' %}
+{% block title %}
+
+{{title}}
+
+{% endblock %}
+{% csrf_token %}
+{% block body %}
+{% csrf_token %}
+<!-- <form method="POST" class="articleform">
+    {% csrf_token %}
+    
+    {{ form.title }}<br>
+    {{ form.content }}<br>
+    {{ form.id_cat }}<br>
+
+    <h6>Добавить фото {{ form.image}}</h6>
+    <button class="btn btn-success" type="'submit">Добавить Статью</button>
+</form> -->
+
+<div id="catdiv">
+    <form id="form" method='POST'>
+        {% csrf_token %}
+		<input type="text" name="login" class="" placeholder="Введите название статьи">
+		<input type="text" name="password" placeholder="Введите содержание статьи">
+        <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+        <select id="catchoice">    </select>
+		<input type="submit" name="send" value="Отправить">
+	</form>
+</div>
+<script>
+
+$( function() {
+
+    $.ajax({
+    type: 'GET',
+    url: 'api/v1/category/',
+    data: {
+    },
+    success: function(data) {
+        for (var i=0; i <data.length;i++){
+
+        }
+    },
+    success: function(data) {
+        for (var i=0; i <data.length;i++){
+            console.log(data[0]['cat_name'])
+            $('#catchoice').append('<option>'+data[i]['cat_name']+'</option>')
+        }
+             
+    },
+    error: function (error) {
+        // ошибка
+    }
+    
+}); 
+} );
+</script>
+{% endblock %}

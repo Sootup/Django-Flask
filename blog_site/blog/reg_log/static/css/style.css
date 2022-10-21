@@ -1,0 +1,60 @@
+.registrationerror {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 1500px;
+    vertical-align: center;   
+}
+.greetings{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    vertical-align: center;
+
+}
+.mainpage {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    vertical-align: center;
+    
+}
+.articleform {
+    text-align: center;
+    margin: 10px;
+    width: 800px;
+    vertical-align: middle;
+}
+
+.hki {
+    /* text-align: center;
+    vertical-align: center; */
+    margin: 10px; 
+
+}
+.regform {
+    /* display: flex; 
+    flex-direction: column; */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    vertical-align: center;
+    
+}
+
+.regbutton {
+    text-align: center;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.loginhome {
+
+    text-align: center;
+    margin: 10px;
+    vertical-align: right;
+}
+

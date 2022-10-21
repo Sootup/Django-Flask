@@ -1,0 +1,7 @@
+{% if flash %}
+{% for key,value in flash.items %}
+{% if key=="error" %}
+    {{key}} 
+{% endif %}
+{% endfor %}
+{% endif %}
